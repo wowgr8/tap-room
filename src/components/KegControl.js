@@ -9,7 +9,8 @@ class KegControl extends React.Component{
     super(props);
     this.state = {
       formVisibleOnPage: false,
-    }
+      mainKegList: []
+    };
   }
 
 
@@ -18,6 +19,12 @@ class KegControl extends React.Component{
     this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
     }));
+  }
+
+  handleAddingNewKegToList = (newKeg) => {
+    const newMainKegList = this.state.mainKegList.concat(newKeg);
+    this.setState({mainKegList: newMainKegList,
+                  formVisibleOnPage: false});
   }
 
 
@@ -29,7 +36,7 @@ class KegControl extends React.Component{
       currentlyVisibleState = <NewKegForm />
       buttonText = "Return to Keg List";
     } else {
-      currentlyVisibleState = <KegList />
+      currentlyVisibleState = <KegList kegList = {this.state.mainKegList}/>
       buttonText = "Add New Keg";
     }
 
