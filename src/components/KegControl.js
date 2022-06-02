@@ -14,16 +14,23 @@ class KegControl extends React.Component{
 
 
   // Methods for buttons
-
+  handleClick = () => {
+    this.setState(prevState => ({
+      formVisibleOnPage: !prevState.formVisibleOnPage
+    }));
+  }
 
 
   render(){
     // conditional rendering
     let currentlyVisibleState = null;
+    let buttonText = null;
     if(this.state.formVisibleOnPage){
       currentlyVisibleState = <NewKegForm />
+      buttonText = "Return to Keg List";
     } else {
       currentlyVisibleState = <KegList />
+      buttonText = "Add New Keg";
     }
 
 
@@ -32,6 +39,7 @@ class KegControl extends React.Component{
     return (
       <React.Fragment>
         {currentlyVisibleState}
+        <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
   }
