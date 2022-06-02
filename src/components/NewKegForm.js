@@ -3,7 +3,12 @@ import React from "react";
 function NewKegForm(){
   return (
     <React.Fragment>
-      <h1>NewKegForm Placeholder</h1>
+      <newkegform className="block col-2">
+        <h2>NewKegForm Placeholder</h2>
+        <div className="row">
+          <h2>ReusableForm placeholder</h2>
+        </div>
+      </newkegform>   
     </React.Fragment>
   );
 }
