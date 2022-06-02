@@ -7,17 +7,18 @@ function KegList(props){
     <React.Fragment>
       <keglist className="block col-2">
         <h2>KegList Placeholder</h2>
-        <div className="row">
+        
           <hr/>
           {props.kegList.map((keg, index) =>
+            <div className="row">
             <Keg
               name = {keg.name}
               brand = {keg.brand}
               flavor = {keg.flavor}
               price = {keg.price}
               key = {index} />
-            )}
-        </div>
+              </div> 
+            )}    
       </keglist>      
     </React.Fragment>
   );
