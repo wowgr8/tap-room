@@ -3,7 +3,13 @@ import React from "react";
 function Header(){
   return (
     <React.Fragment>
-      <h1>Header Placeholder</h1>
+      <header className="row block center">
+        <div>
+          <a href="#/">
+            <h1>Kombucha Tap Room</h1>
+          </a>
+        </div>
+      </header>
     </React.Fragment>
   );
 }
