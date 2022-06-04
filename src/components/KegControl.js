@@ -42,6 +42,18 @@ class KegControl extends React.Component{
     this.setState({selectedKeg: selectedKeg});
   }
 
+  handleDeleteingKeg = (id) => {
+    const newMainKegList = this.state.mainKegList.filter(keg => keg.id !== id);
+    this.setState({
+      mainKegList: newMainKegList,
+      selectedKeg: null
+    });
+  }
+
+  //handleRefillingKeg (increment)
+
+  // handle selling pint (decrement)
+
   render(){
     // conditional rendering
     let currentlyVisibleState = null;
