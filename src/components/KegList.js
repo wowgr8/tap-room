@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function KegList(props){
   return (
     <React.Fragment>
-      <keglist className="block col-2">
+      <div className="block col-2">
         <h2>KegList</h2>
         
           <hr/>
@@ -21,7 +21,7 @@ function KegList(props){
               key = {keg.id} />
               </div> 
             )}    
-      </keglist>      
+      </div>      
     </React.Fragment>
   );
 }
