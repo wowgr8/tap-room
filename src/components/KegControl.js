@@ -11,7 +11,8 @@ class KegControl extends React.Component{
     this.state = {
       formVisibleOnPage: false,
       mainKegList: [],
-      selectedKeg: null
+      selectedKeg: null,
+      editing: false
     };
   }
 
@@ -48,6 +49,11 @@ class KegControl extends React.Component{
       mainKegList: newMainKegList,
       selectedKeg: null
     });
+  }
+
+  handleEditClick = () => {
+    console.log("handleEditClick reached");
+    this.setState({editing: true});
   }
 
   //handleRefillingKeg (increment)
