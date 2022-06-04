@@ -57,6 +57,14 @@ class KegControl extends React.Component{
     this.setState({editing: true});
   }
 
+  handleEditingKegInList = (kegToEdit) => {
+    const editedMainKegList = this.state.mainKegList.filter(keg => keg.id !== this.state.selectedKeg.id).concat(kegToEdit);
+    this.setState({ mainKegList: editedMainKegList,
+                    editing: false,
+                    selectedKeg: null
+    });
+  }
+
   //handleRefillingKeg (increment)
 
   // handle selling pint (decrement)
@@ -66,7 +74,7 @@ class KegControl extends React.Component{
     let currentlyVisibleState = null;
     let buttonText = null;
     if(this.state.editing){
-      currentlyVisibleState = <EditKegForm keg = {this.state.selectedKeg} />
+      currentlyVisibleState = <EditKegForm keg = {this.state.selectedKeg} onEditKeg = {this.handleEditingKegInList} />
     } else if(this.state.selectedKeg != null){
       currentlyVisibleState = <KegDetail keg = {this.state.selectedKeg} 
                                         onClickingDelete = {this.handleDeleteingKeg} 
