@@ -4,6 +4,17 @@ import KegStock from "./KegStock";
 
 function KegDetail(props){
   const { keg, onClickingDelete } = props;
+  const [kegQty, setKegQty] = useState(() => {
+    console.log("run function")
+    return 0
+  });
+
+  // const onAdd = () => {
+  //   setKegQty(prevKegQty => prevKegQty * 124);
+  // }
+  function onAdd(){
+    setKegQty(prevKegQty => prevKegQty + 124);
+  }
 
   return (
     <React.Fragment>
@@ -15,8 +26,10 @@ function KegDetail(props){
         <h3>{keg.price}</h3>     
         <hr/>
         <KegStock 
-          /* <button onClick={ props.onClickingEdit }>Refill Keg</button> */
-          /* <button onClick = {() => onClickingDelete(keg.id)}>Sell Pint</button> */
+          kegQty = {kegQty}
+          setKegQty = {setKegQty}
+          onAdd = {onAdd}
+
           />
         <div className="row">
           <button onClick={ props.onClickingEdit }>Update Ticket</button>
