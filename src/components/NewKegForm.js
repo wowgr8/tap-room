@@ -18,12 +18,12 @@ function NewKegForm(props){
 
   return (
     <React.Fragment>
-      <newkegform className="block col-2">
+      <div className="block col-2">
         <h2>Add New Keg</h2>
         <ReusableForm
           formSubmissionHandler={handleNewKegSubmission}
           buttonText = "Add Keg!" />
-      </newkegform>   
+      </div>   
     </React.Fragment>
   );
 }
