@@ -17,10 +17,17 @@ class KegControl extends React.Component{
 
 
   // Methods for buttons
-  handleClick = () => {
-    this.setState(prevState => ({
-      formVisibleOnPage: !prevState.formVisibleOnPage
-    }));
+  handleClick = () => {  
+    if(this.state.selectedKeg != null) {
+      this.setState({
+        formVisibleOnPage: false,
+        selectedKeg: null
+      });
+    } else {
+      this.setState(prevState => ({
+        formVisibleOnPage: !prevState.formVisibleOnPage
+      }));
+    }
   }
 
   handleAddingNewKegToList = (newKeg) => {
