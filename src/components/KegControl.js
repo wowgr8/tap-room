@@ -68,6 +68,7 @@ class KegControl extends React.Component{
 
   //handleRefillingKeg (increment)
 
+
   // handle selling pint (decrement)
 
   render(){
@@ -76,6 +77,7 @@ class KegControl extends React.Component{
     let buttonText = null;
     if(this.state.editing){
       currentlyVisibleState = <EditKegForm keg = {this.state.selectedKeg} onEditKeg = {this.handleEditingKegInList} />
+      buttonText = "Return to Keg List";
     } else if(this.state.selectedKeg != null){
       currentlyVisibleState = <KegDetail keg = {this.state.selectedKeg} 
                                         onClickingDelete = {this.handleDeleteingKeg} 
