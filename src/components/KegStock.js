@@ -16,7 +16,6 @@ function KegStock(props){
       setKegQty(prevKegQty => prevKegQty - 1);
       newSellButtonText("Sell Pint");
     } else {
-      console.log("please refill keg")
       newSellButtonText("Out of Stock.");
     }
   }
