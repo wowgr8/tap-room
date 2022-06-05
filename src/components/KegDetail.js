@@ -4,17 +4,31 @@ import KegStock from "./KegStock";
 
 function KegDetail(props){
   const { keg, onClickingDelete } = props;
-  const [kegQty, setKegQty] = useState(() => {
+
+  function initialKegQty(){
     console.log("run function")
     return 0
-  });
-  const [ buttonText, newbuttonText] = useState(() => {
-    return "Tap Keg";
-  })
-
-  // const onAdd = () => {
-  //   setKegQty(prevKegQty => prevKegQty * 124);
+  }
+  // function initialPintQty(){
+  //   console.log("run function")
+  //   return 0
   // }
+  function initialSellButtonText(){
+    console.log("SELL PINT")
+    return "Sell Pint";
+  }
+  function initialButtonText(){
+    console.log("NEWKEG")
+    return "Tap New Keg";
+  }
+
+  const [kegQty, setKegQty] = useState(() => initialKegQty())
+  // const [pintQty, setPintQty] = useState(() => initialPintQty())
+
+  const [ buttonText, newButtonText] = useState(() => initialButtonText())
+
+  const [sellButtonText, newSellButtonText] = useState(() => initialSellButtonText())
+
 
 
   return (
@@ -29,8 +43,12 @@ function KegDetail(props){
         <KegStock 
           kegQty = {kegQty}
           setKegQty = {setKegQty}
+          // pintQty = {pintQty}
+          // setPintQty = {setPintQty}
           buttonText = {buttonText}
-          newbuttonText = {newbuttonText}
+          newButtonText = {newButtonText}
+          sellButtonText = {sellButtonText}
+          newSellButtonText = {newSellButtonText}
 
 
           />
