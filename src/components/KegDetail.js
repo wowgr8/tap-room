@@ -9,10 +9,6 @@ function KegDetail(props){
     console.log("run function")
     return 0
   }
-  // function initialPintQty(){
-  //   console.log("run function")
-  //   return 0
-  // }
   function initialSellButtonText(){
     console.log("SELL PINT")
     return "Sell Pint";
@@ -23,13 +19,8 @@ function KegDetail(props){
   }
 
   const [kegQty, setKegQty] = useState(() => initialKegQty())
-  // const [pintQty, setPintQty] = useState(() => initialPintQty())
-
   const [ buttonText, newButtonText] = useState(() => initialButtonText())
-
   const [sellButtonText, newSellButtonText] = useState(() => initialSellButtonText())
-
-
 
   return (
     <React.Fragment>
@@ -43,15 +34,10 @@ function KegDetail(props){
         <KegStock 
           kegQty = {kegQty}
           setKegQty = {setKegQty}
-          // pintQty = {pintQty}
-          // setPintQty = {setPintQty}
           buttonText = {buttonText}
           newButtonText = {newButtonText}
           sellButtonText = {sellButtonText}
-          newSellButtonText = {newSellButtonText}
-
-
-          />
+          newSellButtonText = {newSellButtonText} />
         <div className="row">
           <button onClick={ props.onClickingEdit }>Update Ticket</button>
           <button onClick = {() => onClickingDelete(keg.id)}>Delete Keg</button>
