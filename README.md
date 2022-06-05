@@ -4,7 +4,7 @@
 
 ### _June 04, 2022_
 
-#### _A React app for managing keg re-fills and pint sales._
+#### _A React app for managing keg refills and pint sales._
 
 ## Previews <a id="previews"></a>
 
@@ -39,7 +39,7 @@
 
 ## Description <a id="description"></a>
 
-A React application where a kombucha store can track their kegs. The user can see a list of all available kegs. Once a keg is created and then selected, the user can see and edit the keg's details. The user can click a button to sell a pint and the number of pints in the keg will decrease by 1. The user can also re-fill the keg as much as they want, each keg re-fill will increase the pint count by 124. The application has full CRUD implementation, so the user can also delete unwanted kegs.
+A React application where a kombucha store can track their kegs. The user can see a list of all available kegs. Once a keg is created and then selected, the user can see and edit the keg's details. The user can click a button to sell a pint, decreasing the available stock by 1. If a keg's stock reaches 0, pint sales will not be possible until the keg is refilled. There are no limits for keg refills, each keg refill will increase the pint count by 124. The application has full CRUD implementation, so the user can also delete unwanted kegs.
 
 
 
