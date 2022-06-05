@@ -1,8 +1,8 @@
 # Kombucha Tap Room
 
-#### By _**Cesar Lopez**_
+### By _**Cesar Lopez**_
 
-### June 04, 2022_
+### _June 04, 2022_
 
 #### _A React app for managing keg re-fills and pint sales._
 
