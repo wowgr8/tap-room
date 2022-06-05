@@ -6,15 +6,12 @@ function KegDetail(props){
   const { keg, onClickingDelete } = props;
 
   function initialKegQty(){
-    console.log("run function")
     return 0
   }
   function initialSellButtonText(){
-    console.log("SELL PINT")
     return "Sell Pint";
   }
   function initialButtonText(){
-    console.log("NEWKEG")
     return "Tap New Keg";
   }
 
