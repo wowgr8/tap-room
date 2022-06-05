@@ -1,8 +1,22 @@
-# Getting Started with Create React App
+# Kombucha Tap Room
+
+#### By _**Cesar Lopez**_
+
+### June 04, 2022_
+
+#### _An ASP.NET Core web API for U.S. State and National Parks._
+
+![](https://github.com/wowgr8/tap-room/blob/main/src/img/tap-room-component-diagram-hierarchy.png)
+
+## Table of Contents
+
+## Getting Started with Create React App
+<details ><summary>click to Available Scripts</summary>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts 
+
 
 In the project directory, you can run:
 
@@ -38,8 +52,10 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</details>
 
-## Learn More
+## Learn More About Create-React-App
+<details><summary>Click to see</summary>
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
@@ -68,3 +84,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
