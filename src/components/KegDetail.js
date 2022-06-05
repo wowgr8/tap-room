@@ -8,13 +8,14 @@ function KegDetail(props){
     console.log("run function")
     return 0
   });
+  const [ buttonText, newbuttonText] = useState(() => {
+    return "Tap Keg";
+  })
 
   // const onAdd = () => {
   //   setKegQty(prevKegQty => prevKegQty * 124);
   // }
-  function onAdd(){
-    setKegQty(prevKegQty => prevKegQty + 124);
-  }
+
 
   return (
     <React.Fragment>
@@ -28,7 +29,9 @@ function KegDetail(props){
         <KegStock 
           kegQty = {kegQty}
           setKegQty = {setKegQty}
-          onAdd = {onAdd}
+          buttonText = {buttonText}
+          newbuttonText = {newbuttonText}
+
 
           />
         <div className="row">
