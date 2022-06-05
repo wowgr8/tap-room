@@ -126,14 +126,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Known Bugs <a id="bugs"></a>
 
 * _No known issues_
-  
-## License <a id="license"></a>
 
-_MIT_
-
-Copyright (c) _2022_ _Cesar Lopez, Ebru Rice, Jack Skelton, Marni Sucher, Patrick Dolan_
-
-  
 ## Contact Me <a id="contact"></a>
 
 If you encounter any issues or have any questions or ideas for this site, please contact:
@@ -142,3 +135,9 @@ Cesar Lopez:
 * Email: [Lopez.cesar.aug@gmail.com](mailto:lopez.cesar.aug@gmail.com)
 * Github: [wowgr8](https://github.com/wowgr8)
 * LinkedIn: [https://www.linkedin.com/in/cesar-aug-lopez](https://www.linkedin.com/in/cesar-aug-lopez)
+  
+## License <a id="license"></a>
+
+_MIT_
+
+Copyright (c) _2022_ _Cesar Lopez_
