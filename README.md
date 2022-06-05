@@ -8,7 +8,7 @@
 
 ## Previews <a id="previews"></a>
 
-![](https://github.com/wowgr8/tap-room/blob/main/src/img/addStockAndDelete.gif width="250" height="250")
+![](https://github.com/wowgr8/tap-room/blob/main/src/img/addStockAndDelete.gif)
 ![](https://github.com/wowgr8/tap-room/blob/main/src/img/AddNewKegForm.png)
 ![](https://github.com/wowgr8/tap-room/blob/main/src/img/KegList.png)
 
