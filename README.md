@@ -48,7 +48,7 @@ A React application where a kombucha store can track their kegs. The user can se
 
 
 ## Setup and Installation <a id="setup"></a>
-<details ><summary>click to Available Scripts</summary>
+<details ><summary>click to see Available Scripts</summary>
 
 ## Getting Started with Create React App
 
