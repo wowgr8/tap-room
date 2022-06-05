@@ -16,10 +16,13 @@ function EditKegForm(props){
 
   return (
     <React.Fragment>
-      <h1>Edit Keg</h1>
-      <ReusableForm
-        formSubmissionHandler = {handleEditKegFormSubmission}
-        buttonText = "Update Keg"  />
+      <div className="block col-2">
+        <h1>Edit Keg</h1>
+
+        <ReusableForm
+          formSubmissionHandler = {handleEditKegFormSubmission}
+          buttonText = "Update Keg"  />
+      </div>
     </React.Fragment>
   );
 }

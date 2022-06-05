@@ -22,12 +22,12 @@ function KegStock(props){
 
   return (
     <React.Fragment>
-      <div className = "row">
+      <div id ="card">
         <p>stock: {kegQty} pints</p>
       </div>
       <div className="row">          
-          <button onClick={ onAdd}>{buttonText}</button>
-          <button onClick={ onSell}>{sellButtonText}</button>
+          <button className="refill" onClick={ onAdd}>{buttonText}</button>
+          <button className="sell" onClick={ onSell}>{sellButtonText}</button>
       </div>
     </React.Fragment>
   );

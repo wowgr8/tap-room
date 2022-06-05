@@ -15,6 +15,7 @@ code {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #404040;
 }
 
 h1,
@@ -46,10 +47,11 @@ a {
   flex: 2;
 }
 .block {
-  background-color: bisque;
+  background-color: #98B4D4;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
+  border: 2px solid #010a0c;
 }
 .row.center {
   align-items: center;
@@ -67,14 +69,40 @@ button {
 }
 
 button.refill {
-  background-color: #40c0f0;
-  width: 1.5rem;
+  background-color: #40f043;
+
 }
 button.sell {
   background-color: #f04040;
-  width: 1.5rem;
 }
 
 .text-right {
   text-align: right;
+}
+
+#card {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  border: 2px solid #010a0c;
+  background-color: #9ce2f1;
+  border-radius: 0.5rem;
+}
+#cardNew {
+  color: black;
+  /* padding: 16px 32px; */
+  text-align: left;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 2.0s;
+  /* background-color: #021d23; */
+  border-radius: 0.5rem;
+}
+
+.centerText{
+  text-align: center;
 }

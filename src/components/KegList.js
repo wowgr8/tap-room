@@ -8,16 +8,20 @@ function KegList(props){
       <div className="block col-2">
         <h2>KegList</h2>       
           <hr/>
-          <div className="row">
+          <div className="row ">
             {props.kegList.map((keg) =>
-              <Keg
-                whenKegClicked = {props.onKegSelection}
-                name = {keg.name}
-                brand = {keg.brand}
-                flavor = {keg.flavor}
-                price = {keg.price}
-                id = {keg.id}
-                key = {keg.id} />
+              <div className=" col mb-2">
+                <div id="card">
+                  <Keg
+                  whenKegClicked = {props.onKegSelection}
+                  name = {keg.name}
+                  brand = {keg.brand}
+                  flavor = {keg.flavor}
+                  price = {keg.price}
+                  id = {keg.id}
+                  key = {keg.id} />
+                </div>
+              </div>
             )}
           </div>    
       </div>      
@@ -31,3 +35,5 @@ KegList.propTypes = {
 };
 
 export default KegList;
+
+

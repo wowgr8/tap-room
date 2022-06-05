@@ -4,10 +4,8 @@ function Header(){
   return (
     <React.Fragment>
       <header className="row block center">
-        <div>
-          <a href="#/">
-            <h1>Kombucha Tap Room</h1>
-          </a>
+        <div className="centerText">
+            <h1 >Kombucha Tap Room</h1>
         </div>
       </header>
     </React.Fragment>

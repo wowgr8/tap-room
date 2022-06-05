@@ -6,7 +6,6 @@ import EditKegForm from "./EditKegForm";
 
 class KegControl extends React.Component{
 
-  //Constructor w/state
   constructor(props){
     super(props);
     this.state = {
@@ -17,8 +16,6 @@ class KegControl extends React.Component{
     };
   }
 
-
-  // Methods for buttons
   handleClick = () => {  
     if(this.state.selectedKeg != null) {
       this.setState({
@@ -39,7 +36,6 @@ class KegControl extends React.Component{
                   formVisibleOnPage: false});
   }
 
-  // This method will take the id property of a keg, find the correct keg, and then set selectedkeg equal to that keg. 
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
     this.setState({selectedKeg: selectedKeg});
@@ -65,13 +61,7 @@ class KegControl extends React.Component{
     });
   }
 
-  //handleRefillingKeg (increment)
-
-
-  // handle selling pint (decrement)
-
   render(){
-    // conditional rendering
     let currentlyVisibleState = null;
     let buttonText = null;
     if(this.state.editing){
@@ -90,13 +80,16 @@ class KegControl extends React.Component{
       buttonText = "Add New Keg";
     }
 
-
-
-
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div className="block col">
+          <div className= "row">
+            <div id="cardNew">
+              <button onClick={this.handleClick}>{buttonText}</button>
+            </div>
+          </div>
+        </div>  
       </React.Fragment>
     );
   }
