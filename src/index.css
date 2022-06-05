@@ -57,6 +57,18 @@ a {
   align-items: center;
 }
 
+#card {
+  opacity: 0.8;
+  transition: 0.3s;
+  border: 2px solid #010a0c;
+  background-color: #9ce2f1;
+  border-radius: 0.5rem;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
 button {
   font-size: 0.8rem;
   padding: 0.2rem;
@@ -80,26 +92,14 @@ button.sell {
   text-align: right;
 }
 
-#card {
-  color: black;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.8;
-  transition: 0.3s;
-  border: 2px solid #010a0c;
-  background-color: #9ce2f1;
-  border-radius: 0.5rem;
-}
+
 #cardNew {
   color: black;
-  /* padding: 16px 32px; */
   text-align: left;
   font-size: 16px;
   margin: 4px 2px;
   opacity: 0.8;
   transition: 2.0s;
-  /* background-color: #021d23; */
   border-radius: 0.5rem;
 }
 
